@@ -1,6 +1,6 @@
 # SmalliOSApplication
 
-SmalliOSApplication is an iOS app built with Swift and UIKit. It is designed to manage users and perform basic CRUD operations (Create, Read, Update, Delete).
+SmalliOSApplication is an iOS app built with Swift and SwiftUI. It is designed to manage users and perform basic CRUD operations (Create, Read, Update, Delete).
 
 ## Requirements
 
