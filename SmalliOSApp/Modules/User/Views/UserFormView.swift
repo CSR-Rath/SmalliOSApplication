@@ -74,7 +74,7 @@ struct UserFormView: View {
                                 backgroundColor: Color.red.opacity(0.1),
                                 foregroundColor: .red
                             ) {
-                                viewModel.cancelEditing()
+                                viewModel.resetForm()
                                 presentationMode.wrappedValue.dismiss()
                             }
                         }

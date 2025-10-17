@@ -51,7 +51,7 @@ final class UserViewModel: ObservableObject {
         users.append(newUser)
         userDefaultsService.saveUsers(users)
         
-        clearForm()
+        resetForm()
         
         // Reload Users
         loadUsers()
@@ -71,7 +71,7 @@ final class UserViewModel: ObservableObject {
         )
         userDefaultsService.updateUser(updatedUser)
       
-        clearForm()
+        resetForm()
         loadUsers()
     }
     
@@ -91,12 +91,9 @@ final class UserViewModel: ObservableObject {
         email = getEmail(uuid: user.id)
     }
     
-    func cancelEditing() {
-        clearForm()
-    }
     
     // MARK: - reset form
-    private func clearForm() {
+     func resetForm() {
         firstName = ""
         lastName = ""
         email = ""

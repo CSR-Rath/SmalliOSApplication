@@ -40,7 +40,7 @@ struct UserListView: View {
                     isActive: $isPushActive
                 ) {
                     Button(action: {
-                        viewModel.cancelEditing()
+                        viewModel.resetForm()
                         isPushActive = true
                     }) {
                         Image(systemName: "plus")
@@ -49,12 +49,5 @@ struct UserListView: View {
                 }
         )
     }
-//
-//    private func deleteUser(at offsets: IndexSet) {
-//        offsets.forEach { index in
-//            let user = viewModel.users[index]
-//            viewModel.deleteUser(user)
-//        }
-//    }
 }
 
